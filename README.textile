@@ -2,6 +2,6 @@ h1. A Django app running on AppEngine with Django Admin interface
 
 djangoappengine project was used as a starting code base.
 
-'vyadav.in':vyadav is powered by this app.
+"vyadav.in":vyadav is powered by this app.
 
 [vyadav]http://vyadav.in

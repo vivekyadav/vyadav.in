@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %} vyadav.in {% endblock %}
+
+{% block maincontent %}
+	{% for shout in shouts%}
+		<a href="/blog/{{shout.slug}}/"><h1 class="title">{{shout.title}}</h1></a>
+		<p>{{shout.text|safe}}</p>
+	{% endfor %}
+{% endblock %}

@@ -1,0 +1,45 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}"
+    xml:lang="{% firstof LANGUAGE_CODE 'en' %}"
+    lang="{% firstof LANGUAGE_CODE 'en' %}">
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet"  type="text/css" href="/static/css/style.css" media="screen"  />
+	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+
+    {% block extra-head %}{% endblock %}
+  </head>
+
+  <body>
+        <div id="wrap">
+        	<div id="header">
+            	<h1>vyadav.in</h1>
+                <ul id="nav">                
+                	<li><a  href="/">Home</a><span  class="nav-divider">|</span></li>
+	        		<li><a  href="/projects/">Projects</a><span  class="nav-divider">|</span></li>	        		
+	        		<li><a  href="/contacts/">Contacts</a></li>
+	    		</ul>
+            </div><!--end header-->
+            <div id="content">
+            	<div id="maincontent">
+				{% block maincontent %}                
+				{% endblock %}
+                </div><!--end maincontent-->
+                <div id="aboutme">
+                	<div id="aboutme-logo">
+                    	<a href="/">
+                        	<img src="/static/images/aboutme-logo.png" alt="About Me logo" />
+                        </a>
+                    </div>
+                    <p>Hi ! and welcome. My name is Vivek Yadav. I like solving problems with programming. From colloid simulations to Websites and template metaprogramming to functional programming, I use computer programming quite a lot.</p>
+					<a href="http://twitter.com/vivekkyadavv" class="twitter-follow-button" data-show-count="false">Follow @vivekkyadavv</a>
+                </div><!--end aboutme-->
+            </div><!--end content-->
+            <div id="footer">
+            </div><!--end footer-->
+        </div><!--end wrap-->
+    </body>
+</html>

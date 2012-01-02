@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block maincontent %}			
+			<form method="POST" action="/post/">
+				<table>
+					{{form}}
+				</table>
+				<input type="image" src="/static/images/submit-button.png" value="Submit" />
+			</form>
+{% endblock %}

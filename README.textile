@@ -1,22 +1,7 @@
-h1. djangoappengine sample running Django's Admin Interface with permissions on Google App Engine
+h1. A Django app running on AppEngine with Django Admin interface
 
-No more descriptions needed.
+djangoappengine project was used as a starting code base.
 
-"djangoappengine":app / "django-nonrel":nonrel sample with all deps bundled within.
+'vyadav.in':vyadav is powered by this app.
 
-Here you can find a "djangoappengine bootstrap script":boot to start a fresh
-project like this one but with the newest possible versions of all deps. The
-same script was used to create this sample project.
-
-This project in action:
-"http://djangoadminongae.appspot.com/admin":sampleonline
-
-h2. Author
-
-Rogério Carvalho Schneider <stockrt@gmail.com>
-"http://stockrt.github.com":http://stockrt.github.com
-
-[app]http://www.allbuttonspressed.com/projects/djangoappengine
-[nonrel]http://www.allbuttonspressed.com/projects/django-nonrel
-[boot]https://github.com/stockrt/djangoappengine_bootstrap
-[sampleonline]http://djangoadminongae.appspot.com/admin
+[vyadav]http://vyadav.in
